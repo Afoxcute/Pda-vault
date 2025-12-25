@@ -1,0 +1,22 @@
+{
+    "idl": "/home/afolabi/pinocchio-vault/idl/pinocchio_vault.json",
+    "before": [],
+    "scripts": {
+        "js": {
+            "from": "@codama/renderers-js",
+            "args": [
+                "client/clients/js/src/generated"
+            ]
+        },
+        "rust": {
+            "from": "@codama/renderers-rust",
+            "args": [
+                "~/pinocchio-vault/src/generated",
+                {
+                    "crateFolder": "~/pinocchio-vault",
+                    "formatCode": true
+                }
+            ]
+        }
+    }
+}
